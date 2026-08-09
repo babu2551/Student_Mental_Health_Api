@@ -1,4 +1,4 @@
-const apiUrl = "https://student-mental-health-api-1.onrender.com";
+const apiUrl = "https://student-mental-health-api-1.onrender.com/predict";
 const form = document.getElementById("predict-form");
 const resultSection = document.getElementById("result");
 const errorSection = document.getElementById("error");
