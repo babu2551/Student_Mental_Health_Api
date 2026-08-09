@@ -1,4 +1,5 @@
 import logging
+from pathlib import Path
 import joblib
 import pandas as pd
 from fastapi import FastAPI, HTTPException, Request
@@ -9,12 +10,14 @@ from pydantic import BaseModel, Field
 from typing import Literal
 
 logging.basicConfig(level=logging.INFO)
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = BASE_DIR / 'Mental_Health_Model.pkl'
 model = None
 try:
-    model = joblib.load('Mental_Health_Model.pkl')
-    logging.info('Loaded Mental_Health_Model.pkl successfully')
+    model = joblib.load(MODEL_PATH)
+    logging.info('Loaded model from %s successfully', MODEL_PATH)
 except Exception as exc:
-    logging.error('Could not load Mental_Health_Model.pkl', exc_info=True)
+    logging.error('Could not load model from %s', MODEL_PATH, exc_info=True)
 
 app = FastAPI()
 app.add_middleware(
