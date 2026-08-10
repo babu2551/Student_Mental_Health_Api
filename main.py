@@ -78,6 +78,10 @@ class PredicitonResponse(BaseModel):
         predicted_mental_health_score :float
 
 
+@app.get('/')
+def home():
+    return {"message":"API work successfully 🎉",
+         'status': 'ok'}
 @app.get('/health')
 def health():
     return {'status': 'ok'}
