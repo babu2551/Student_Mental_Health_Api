@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Mental Health Predictor</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
     <div class="page-shell">
         <div class="hero-panel">
             <div class="hero-copy">
                 <span class="eyebrow">Student Wellness AI</span>
                 <h1>Mental health prediction with confidence.</h1>
-                <p>Fill in the student profile and social app usage details. Our model returns an instant mental health score to help you track trends and identify stress risks.</p>
+                <p>Fill in the student profile and social app usage details. Our model returns an instant mental health
+                    score to help you track trends and identify stress risks.</p>
                 <div class="hero-stats">
                     <div>
                         <strong>12 fields</strong>
@@ -109,19 +112,23 @@
                         </select>
                     </label>
                     <label class="field-group">Avg Daily Usage Hours
-                        <input type="number" id="avg_daily_usage_hours" min="0" max="24" step="0.1" placeholder="e.g. 3.5" required />
+                        <input type="number" id="avg_daily_usage_hours" min="0" max="24" step="0.1"
+                            placeholder="e.g. 3.5" required />
                     </label>
                     <label class="field-group">Daily Unlocks
                         <input type="number" id="daily_unlocks" min="0" step="1" placeholder="e.g. 20" required />
                     </label>
                     <label class="field-group">Study Hours
-                        <input type="number" id="study_hours" min="0" max="24" step="0.1" placeholder="e.g. 4" required />
+                        <input type="number" id="study_hours" min="0" max="24" step="0.1" placeholder="e.g. 4"
+                            required />
                     </label>
                     <label class="field-group">Physical Activity Hours
-                        <input type="number" id="physical_activity_hours" min="0" max="2" step="0.1" placeholder="e.g. 0.5" required />
+                        <input type="number" id="physical_activity_hours" min="0" max="2" step="0.1"
+                            placeholder="e.g. 0.5" required />
                     </label>
                     <label class="field-group">Sleep Hours Per Night
-                        <input type="number" id="sleep_hours_per_night" min="0" max="24" step="0.1" placeholder="e.g. 7" required />
+                        <input type="number" id="sleep_hours_per_night" min="0" max="24" step="0.1" placeholder="e.g. 7"
+                            required />
                     </label>
                     <label class="field-group">Stress Level
                         <select id="stress_level" required>
@@ -163,4 +170,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

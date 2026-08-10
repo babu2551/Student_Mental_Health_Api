@@ -1,4 +1,4 @@
-const apiUrl = "https://student-mental-health-api-1.onrender.com";
+const apiUrl = "http://127.0.0.1:8000/predict" ;
 const form = document.getElementById("predict-form");
 const resultSection = document.getElementById("result");
 const errorSection = document.getElementById("error");
