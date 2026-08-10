@@ -60,7 +60,7 @@ async def generic_exception_handler(request: Request, exc: Exception):
 top_countries = ['Other','India','USA','Canada','Australia','UK','Germany','Mexico','Turkey','France']
 
 class StudentData(BaseModel):
-            age                     : int = Field(..., ge=10, le=100)
+            age                     : int = Field(..., ge=5, le=100)
             gender                  : Literal['Male','Female']
             country                 : str
             academic_level          : Literal['Undergraduate', 'Graduate', 'High School']
