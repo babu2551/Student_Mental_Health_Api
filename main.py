@@ -82,6 +82,7 @@ class PredicitonResponse(BaseModel):
 def home():
     return {"message":"API work successfully 🎉",
          'status': 'ok'}
+
 @app.get('/health')
 def health():
     return {'status': 'ok'}
